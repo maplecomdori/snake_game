@@ -4,17 +4,23 @@
 
 ### First-Time Setup
 
-1. Make sure [Node.js](https://nodejs.org/) (version 20 or later) is installed on your computer
+1. Make sure [Node.js](https://nodejs.org/) (version 20 or later) is installed on your computer.
+   - *Not sure if you have it?* Open a terminal (Mac: Terminal app, Windows: Command Prompt) and type `node -v` to check. If it says "command not found" or shows a version lower than 20, please download and install it from the link above.
 2. Open a terminal, navigate to the game folder, and install dependencies:
    ```
-   cd /path/to/snake
+   cd <your_game_folder>
    npm install
    ```
+   - **Success:** You will see a message like `added X packages` or `audited Y packages`. You can safely ignore any messages about "funding", "vulnerabilities", or running `npm audit fix`.
+   - **Failure:** If you see red error text containing `ERR!` or a message like `npm: command not found`, double-check your Node.js installation (Step 1).
+
+*Note: You only need to do this setup once! The next time you want to play, you can skip straight to the **Running the Game** section below.*
 
 ### Running the Game
 
-1. In the terminal, start the game:
+1. Open a terminal and navigate to your game folder before starting the game:
    ```
+   cd <your_game_folder>
    npm run dev
    ```
 2. Open the URL shown in the terminal (usually http://localhost:5173) in your browser (Chrome recommended)
