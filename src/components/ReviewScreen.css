@@ -1,0 +1,121 @@
+.review-screen {
+  min-height: 100vh;
+  background: var(--bg-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 24px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.review-heading {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  color: var(--snake-green-dark);
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.review-subheading {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--text-light);
+  margin-bottom: 40px;
+}
+
+.review-characters-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 900px;
+  margin-bottom: 48px;
+}
+
+.review-character-card {
+  width: 100px;
+  height: 100px;
+  border-radius: 14px;
+  background-color: var(--card-bg);
+  background-image: url('/mouse_background.png');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid var(--bg-green-dark);
+}
+
+.review-character-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.review-character-text {
+  font-family: 'KaiTi', 'STKaiti', 'SimKai', serif;
+  font-size: 48px;
+  color: var(--text-dark);
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.review-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review-btn {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 14px 36px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  letter-spacing: 0.3px;
+}
+
+.review-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.review-btn:active {
+  transform: translateY(0);
+}
+
+.review-btn-restart {
+  background-color: var(--snake-green);
+  color: #fff;
+}
+
+.review-btn-restart:hover {
+  background-color: var(--snake-green-dark);
+}
+
+.review-btn-new {
+  background-color: var(--accent-gold);
+  color: #fff;
+}
+
+.review-btn-new:hover {
+  background-color: #e09520;
+}
+
+.review-empty {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 18px;
+  color: var(--text-light);
+  margin-bottom: 48px;
+  font-style: italic;
+}
