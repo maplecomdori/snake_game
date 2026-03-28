@@ -40,8 +40,8 @@
   border-radius: 14px;
   background-color: var(--card-bg);
   background-image: url('/mouse_background.png');
-  background-size: 60%;
-  background-position: center;
+  background-size: 35%;
+  background-position: bottom 6px right 6px;
   background-repeat: no-repeat;
   box-shadow: var(--card-shadow);
   display: flex;
